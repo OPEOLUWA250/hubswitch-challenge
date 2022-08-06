@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-hub</title>
+
+    
+      <!-- Bootstrap link -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+       crossorigin="anonymous">
+ 
+         <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+       <!--  navbar -->
+     
+    <nav class="navbar navbar-expand-lg bg-dark px-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+             <img src="./images/freetogame.png" width="40px" height=" 40px" alt="">
+            FREETOGAME
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+           
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  FreeGames
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">homepage 1</a></li>
+                  <li><a class="dropdown-item" href="#">homepage 2</a></li>
+                  <li><a class="dropdown-item" href="#">homepage 3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  BrowserGames
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Sports</a></li>
+                  <li><a class="dropdown-item" href="#">Crime</a></li>
+                  <li><a class="dropdown-item" href="#">Education</a></li>
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Gadget</a></li>
+                  <li><a class="dropdown-item" href="#">Business</a></li>
+                  <li><a class="dropdown-item" href="#">Lifestyle</a></li>
+                  <li><a class="dropdown-item" href="#">Family</a></li>
+                  <li><a class="dropdown-item" href="#">Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Foreign News</a></li>
+                  <li><a class="dropdown-item" href="#">Cryptocurrency</a></li>
+                  <li><a class="dropdown-item" href="#">Innovation</a></li>
+                  <li><a class="dropdown-item" href="#">Politics</a></li>
+                  <li><a class="dropdown-item" href="#">Politics</a></li> 
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                    Special Offers <span class="badge bg-primary">1</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Top 2022</a>
+              </li>
+              <i class="fa-solid my-3 icon px-2 fa-ellipsis"></i>
+            </ul>
+
+           
+            
+            <div class="sub-nav d-flex">
+                <i class="fa-solid my-3 icon fa-magnifying-glass"></i>
+                <i class="fa-solid my-3 icon fa-gift"></i>
+                <a class="my-3 px-3" href="#">Log In </a>
+                <button type="button" class="join-btn">Join Free</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- End navbar -->
+
+    <!-- start intro -->
+
+    <div class="intro">
+        <h1 class="intro-header">
+            Find and track the best <span>free-to-play games!</span>
+        </h1>
+        <p>Track what you've played and search for what to play next! Plus free Premium loot!</p>
+        <button class="btn btn-primary get-started"><b> GET STARTED</b> it's free</button>
+        <button id="browse" class=" browse-games">Browse Games</button>
+    </div>
+
+    <!--End intro -->
+
+
+    <h1 class="px-4">Recently Added</h1>
+
+    <div class="container">
+      <div id="final" class="row well g-3"></div>
+  </div>
+    
+  <!-- Api -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <!-- Cdn bootstrap   -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> 
+
+    <!-- js file -->
+    <script src="index.js"></script>
+
+</body>
+</html>
