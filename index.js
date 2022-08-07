@@ -22,9 +22,13 @@ function showGames() {
         `
         <div class = "col-md-3 col-sm-12 "> 
         <div class="well text-center">
-            <img class="img-thumbnail" src="${result.thumbnail}" alt="images-of-games" />
+            <img class="img-thumbnail" src="${result.thumbnail}" alt="images-of-games" />           
             <h4><b>${result.title}</b></h4>
-            <a class="btn btn-primary mt-3" href="${result.freetogame_profile_url}" target="_blank">Play Game</a>
+            <div class="d-flex mx-3">
+            <h6 class="small text-secondary mx-4">${result.genre}</h6>
+            <h6 class="small text-secondary">${result.release_date}</h6>
+            </div>
+            <a class="btn btn-primary mt-2" href="${result.freetogame_profile_url}" target="_blank">Play Game</a>
             </div>
             </div>
         `
@@ -36,3 +40,7 @@ function showGames() {
     .catch(err => console.error(err));
                
 }
+
+alert('Say "I swear to God, i am not a robot"')
+
+  
